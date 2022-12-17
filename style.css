@@ -2,27 +2,55 @@ html,body{
     margin: 0;
 }
 
+
+.section-header{
+    background-color:bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    margin-top: 10em;
+
+}
+
+.section-header > *{
+    max-width: 800px;
+    width: 100%;
+}
+
+
 body{
     background-color:beige;
 }
 
+
+
 /*First Page*/
+
+
+
 #first-page-quotes{
     font-family: fantasy;
-    font-size: 1em;
+    font-size: 1.5em;
     color: beige;
+    padding-top: 5em;
    
 
 }
 
 .fp-quotes{
+    
     text-align: start;
-  
+    margin: 0;
+    margin-left: 1em;
+
     
 }
 
+
 #myname-and-button{
     text-align: center;
+    padding-top: 40em;
 
 }
 
@@ -30,7 +58,7 @@ body{
     font-family:fantasy;
     font-size: 3em;
     color: white;
-
+  
     
 }
 
@@ -42,7 +70,14 @@ body{
     font-size: 13px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     font-family: 'Courier New', Courier, monospace;
+
+}
+
+#button:hover{
+    background-color: #ff1361;
 }
 
 #first-page{
@@ -59,13 +94,13 @@ height: 110em;
 /*-----------aboutme.html---------------------*/
 
 header{
-  
     font-size: 1em;
-    flex-grow: 1;
+   
     
 }
 
 #my_name{
+    padding-left: 2em;
   font-size: 2em;
   /*margin-left: 3em;*/
 
@@ -98,15 +133,25 @@ header{
 
 
 #name-and-choices{
+    position: fixed;
+    top: 0;
     display: flex;
-    flex-grow: 1;
     background-color: antiquewhite;
+   
 }
 
 #choices{
     margin-top: 2.3em;
-    /*margin-right: 2em;*/
-    /*paano sila mag kakaron ng puwang*/
+    margin-left: 19.2em;
+}
+
+nav#choices a{
+    padding: 8px 15px;
+}
+
+nav#choices a:hover{
+    background-color:#ff1361;
+    color: white;
 }
 
 #about_meee{
@@ -135,7 +180,7 @@ header{
 
 
 #button-for-story{
-   /*paano mapunta ang button sa gitna*/
+    margin-left: 13em;
     border-radius: 100px;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -201,11 +246,11 @@ header{
 
 #my-experience{
       
-       font-size: 30px;
-       margin-left: 100px;
-       padding-left: 15px;
-       padding-right: 15px;
-       padding-top: 15px;
+       font-size: 1.8em;
+       margin-left: 5em;
+       padding-left: 1em;
+       padding-right: 1em;
+       padding-top: 1em;
        overflow: scroll;
        height: 200px;
        width: 400px;
@@ -218,6 +263,7 @@ header{
 
 #my-quotes-in-life{
     text-align: center;
+    margin-top: 5em;
 }
 
 #QUOTES{
@@ -226,6 +272,7 @@ header{
     margin-left: 170px;
     display: flex;
     margin-left: 20px;
+
 }
 
 #quote1,
@@ -259,7 +306,7 @@ footer{
 }
 
 .icons{
-    margin-top: 20px;
+    margin-top: 1em;
     margin-left: 10px;
     padding-right: 10px;
 }
@@ -267,51 +314,39 @@ footer{
 
 
 
-/************INDEX.HTML (FIRST PAGE) ***********/
-/************ iPhone 12 Pro ***********/
-@media only screen and (max-width: 390px) {
+/*********     mystory.html     ********************/
 
-   .fp-quotes{
-    font-size: 1.5em;
-    text-align: center;
-
-   }
-
-   #my-name{
-    font-size: 2em;
-   }
-
-   #first-page{
-    background-image: url(images/background-image:firstpage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55em;
-    width: 25em;
-   }
-
-/************ABOUTME.HTML (SECOND PAGE) ***********/
-@media only screen and (max-width: 390px) {
-
-
-    #choices{
-        display: grid;
-    }
-
-
-    #about_meee{
-        margin:0;
-        display: flex;
-        flex-direction: column-reverse;
-    }
+#this-is-my-story{
+    background-color: peachpuff;
+    margin-left: 8em;
+    margin-right: 8em;
+    color: black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 5em;
+}
 
 
 
+#sir-louie{
+    display:flex;
+}
 
+#sir-louie-picture{
+    border-radius: 50%;
+    margin-left: 70px;
+    margin-top: 100px;
+}
 
+#his-name{
+    margin-left: 2.5em;
+    margin-bottom: 5em;
+    font-size: 30px;
+}
 
-
-
-
+#about_sir_louie{
+    margin-top: 15em;
+    margin-left: 2em;
 }
 
 
@@ -320,8 +355,123 @@ footer{
 
 
 
+@media only screen and (max-width: 500px) {
+    #to-flex-aboutme {
+        font-size: 13px;
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
 
+   .section-header{
+    background-color: beige;
+    margin-top: 7em;
+    
+    
+   }
 
+   #about_meee{
+    font-size: 0.8em;
+    
 
+   }
 
-  }
+   #my_name{
+    font-size: 1.2em;
+    padding-right: 8em;
+   
+   }
+
+    .my-projectS{
+        height: 8em;
+    }
+
+    .captions{
+        font-size: 0.8em;
+       
+    }
+
+    .div{
+        margin-top: 4em;
+    }
+
+    .click-the-picture{
+        font-size: 0.5em;
+    }
+
+    #my-experience{
+        font-size: 1em;
+        margin-top: 10em;
+        margin-left: 0;
+        height: 10em;
+        width: 10em;
+       
+    }
+
+    #QUOTES{
+       font-size: 0.4em;
+    }
+
+    #this-is-my-story{
+        margin-right: 1em;
+        margin-left: 1em;
+        padding-top: 0;
+        margin-top: 2em;
+    }
+
+    #sir-louie{
+        display: inline;
+       
+    }
+
+    #about_sir_louie{
+        margin-top: 0;
+        font-size: 1em;
+    }
+
+    #his-name{
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        position: center;
+    }
+
+    #choices{
+        margin-top: 0.3em;
+        margin-left:0;
+        display: grid;
+        padding-right: 3em;
+    }
+
+    footer{
+        background-color: beige;
+
+    }
+    .footer{
+        height: 1em;
+    }
+
+    #myname-and-button{
+       padding-top: 15em;
+        
+    }
+    #my-name{
+        font-size: 1.5em;
+       
+    }
+
+    .fp-quotes{
+        font-size: 1em;
+        
+    }
+    
+
+    #first-page-quotes{
+        padding: 0;
+    }
+
+    #first-page{
+        height: fit-content;
+    }
+}
+
